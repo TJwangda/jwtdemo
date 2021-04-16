@@ -23,7 +23,7 @@ public class MyInterceptor implements HandlerInterceptor {
         // 1.从Cookie获取token
         String token = getTokenFromCookie(request);
         if (StringUtils.isBlank(token)) {
-            // 2.从headers中获取
+            // 2.从headers中获取sdf
             token = request.getHeader("token");
         }
         if (StringUtils.isBlank(token)) {
